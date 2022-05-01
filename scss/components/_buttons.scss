@@ -1,0 +1,20 @@
+@use '../abstracts' as a;
+@use '../base' as t;
+
+.button {
+  border: 0;
+  padding: a.rem(10) a.rem(20);
+  border-radius: a.rem(50);
+  font-family: t.$font-links;
+  text-transform: capitalize;
+  font-weight: 500;
+
+  &--white {
+    color: a.$light-red;
+  }
+  &--dark {
+    background: transparent;
+    border: a.rem(1) solid a.$white;
+    color: a.$white;
+  }
+}

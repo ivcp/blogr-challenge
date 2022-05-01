@@ -1,0 +1,68 @@
+@use '../abstracts/' as a;
+
+.header {
+  //background-color: #ccc;
+  height: 90vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  color: a.$white;
+  border-bottom-left-radius: a.rem(100);
+  // background-image: a.$background-gradient-intro;
+  background-image: url('../../images/bg-pattern-intro-mobile.svg'),
+    a.$background-gradient-intro;
+  background-repeat: no-repeat;
+  background-position: 35% 33%;
+  background-size: 360%;
+
+  &__top {
+    align-self: start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: a.rem(50);
+    padding-inline: a.rem(20);
+  }
+
+  &__main {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: a.rem(10);
+
+    & > h1,
+    & > p {
+      text-align: center;
+      padding-inline: a.rem(30);
+    }
+
+    & > h1 {
+      font-size: a.rem(35);
+    }
+    & > p {
+      font-size: a.rem(18);
+      margin-bottom: a.rem(40);
+    }
+
+    &-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: a.rem(10);
+    }
+  }
+
+  &__nav {
+    display: none;
+  }
+
+  &__mobile-btn {
+    width: a.rem(32);
+    height: a.rem(18);
+    background: transparent;
+    border: 0;
+    padding: 0;
+    background-image: url(../../images/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

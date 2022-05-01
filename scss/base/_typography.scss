@@ -1,0 +1,11 @@
+$font-main: 'Overpass', sans-serif;
+$font-links: 'Ubuntu', sans-serif;
+
+body {
+  font-family: $font-main;
+  font-weight: 300;
+}
+
+.heading-main {
+  line-height: 1.2;
+}
