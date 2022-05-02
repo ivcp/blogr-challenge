@@ -5,4 +5,8 @@
   background-image: url(../../images/logo.svg);
   background-repeat: no-repeat;
   background-position: left top;
+
+  @include a.breakpoint(large) {
+    transform: scale(1.1);
+  }
 }

@@ -8,13 +8,24 @@
   font-family: t.$font-links;
   text-transform: capitalize;
   font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
 
   &--white {
     color: a.$light-red;
+  }
+  &--white:hover {
+    background-color: a.$very-light-red;
+    color: a.$white;
   }
   &--dark {
     background: transparent;
     border: a.rem(1) solid a.$white;
     color: a.$white;
+  }
+
+  &--dark:hover {
+    background-color: a.$white;
+    color: a.$light-red;
   }
 }

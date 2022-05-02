@@ -18,7 +18,7 @@ The designs were created to the following widths:
 ### Neutral
 
 - White (text): hsl(0, 0%, 100%)
-- Grayish blue (footer text): hsl(240, 2%, 79%)
+- Grayish blue (footer text): hsl(240, 2%, 79%);
 - Very dark grayish blue (body copy): hsl(207, 13%, 34%)
 - Very dark black blue (footer background): hsl(240, 10%, 16%)
 

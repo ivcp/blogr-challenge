@@ -1,3 +1,5 @@
+@use '../abstracts/' as a;
+
 $font-main: 'Overpass', sans-serif;
 $font-links: 'Ubuntu', sans-serif;
 
@@ -8,4 +10,10 @@ body {
 
 .heading-main {
   line-height: 1.2;
+  font-size: clamp(a.rem(35), 1rem + 3vw, a.rem(65));
+}
+
+.heading-links {
+  line-height: 1.2;
+  font-size: a.rem(18);
 }

@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/main.css" />
+    <script defer src="./js/script.js"></script>
 
     <title>Frontend Mentor | [Blogr]</title>
 
@@ -28,20 +29,45 @@
         <div class="logo"></div>
         <button class="header__mobile-btn"></button>
         <nav class="header__nav">
-          <ul role="list">
-            <li>
-              <a class="nav__link" href="#">Product</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Company</a>
-            </li>
-            <li>
-              <a class="nav__link" href="#">Connect</a>
-            </li>
-          </ul>
-          <div class="login">
-            <button class="button">Login</button>
-            <button class="button">Sign up</button>
+          <div class="header__nav-links">
+            <div role="tab" tabindex="0">
+              <h4 class="heading-links">Product</h4>
+              <div class="header__nav-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="header__nav-links">
+            <div role="tab" tabindex="0">
+              <h4 class="heading-links">Company</h4>
+              <div class="header__nav-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="header__nav-links">
+            <div role="tab" tabindex="0">
+              <h4 class="heading-links">Connect</h4>
+              <div class="header__nav-icon"></div>
+            </div>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="header__nav-buttons">
+            <button class="button header__nav-buttons-login">Login</button>
+            <button class="button header__nav-buttons-signup">Sign up</button>
           </div>
         </nav>
       </div>
@@ -123,7 +149,6 @@
       <div>
         <h4>Product</h4>
         <ul role="list">
-          <li>Product</li>
           <li>Overview</li>
           <li>Pricing</li>
           <li>Marketplace</li>
