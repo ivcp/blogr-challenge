@@ -20,6 +20,12 @@ $background-gradient-mobile: linear-gradient(
 );
 
 $background-gradient-body: linear-gradient(
+  to right,
+  hsl(237, 17%, 21%),
+  hsl(237, 23%, 32%)
+);
+$background-gradient-body-mobile: linear-gradient(
+  to bottom,
   hsl(237, 17%, 21%),
   hsl(237, 23%, 32%)
 );

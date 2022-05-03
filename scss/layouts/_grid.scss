@@ -1,0 +1,19 @@
+@use '../abstracts/' as a;
+
+.grid {
+  display: grid;
+  row-gap: var(--gap, a.rem(40));
+  margin-inline: auto;
+  text-align: center;
+  grid-template-columns: a.rem(25) 1fr a.rem(25);
+  grid-auto-rows: min-content;
+
+  @include a.breakpoint(large) {
+    grid-template-columns: 10vw repeat(2, 1fr) 10vw;
+    text-align: left;
+    row-gap: a.rem(10);
+  }
+  @include a.breakpoint(xlarge) {
+    row-gap: 0;
+  }
+}

@@ -33,7 +33,9 @@ html:focus-within {
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  max-width: 1450px;
+  margin-inline: auto;
+  line-height: 1.6;
 }
 
 img {
@@ -41,9 +43,6 @@ img {
   display: block;
 }
 
-input,
-button,
-textarea,
-select {
+button {
   font: inherit;
 }

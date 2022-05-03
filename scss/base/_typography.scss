@@ -6,14 +6,36 @@ $font-links: 'Ubuntu', sans-serif;
 body {
   font-family: $font-main;
   font-weight: 300;
+  color: a.$very-dark-grayish-blue;
+}
+
+h2,
+h3,
+h4 {
+  line-height: 1.2;
 }
 
 .heading-main {
-  line-height: 1.2;
   font-size: clamp(a.rem(35), 1rem + 3vw, a.rem(65));
 }
 
 .heading-links {
-  line-height: 1.2;
   font-size: a.rem(18);
+}
+
+.heading-section {
+  font-size: clamp(a.rem(25), 1rem + 2vw, a.rem(40));
+  color: a.$very-dark-blue;
+  line-height: 1.2;
+
+  &--white {
+    line-height: 1.2;
+    font-size: clamp(a.rem(30), 1rem + 2vw, a.rem(40));
+    color: a.$white;
+  }
+}
+
+.heading-secondary {
+  font-size: clamp(a.rem(24), 0.5rem + 2vw, a.rem(30));
+  color: a.$very-dark-blue;
 }

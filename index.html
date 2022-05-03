@@ -83,8 +83,22 @@
       </div>
     </header>
     <main>
-      <section class="section-1">
-        <h1 class="heading">Designed for the future</h1>
+      <section class="section-1 grid">
+        <h1 class="heading-section">Designed for the future</h1>
+        <picture class="section-1__image">
+          <source
+            media="(max-width: 56.1875em)"
+            srcset="./images/illustration-editor-mobile.svg"
+          />
+          <source
+            media="(min-width: 56.25em)"
+            srcset="./images/illustration-editor-desktop.svg"
+          />
+          <img
+            src="./images/illustration-editor-mobile.svg"
+            alt="Editor illustration"
+          />
+        </picture>
         <div class="section-1__text">
           <div>
             <h2 class="heading-secondary">Introducing an extensible editor</h2>
@@ -107,13 +121,17 @@
             </p>
           </div>
         </div>
-        <div class="section-1__image">image</div>
       </section>
-      <section class="section-2">
-        <h1 class="heading">Designed for the future</h1>
-        <div>image</div>
-        <div>
-          <h2 class="heading-secondary">State of the Art Infrastructure</h2>
+      <section class="section-2 grid">
+        <img
+          class="section-2__image"
+          src="./images/illustration-phones.svg"
+          alt="Phones illustration"
+        />
+        <div class="section-2__text">
+          <h1 class="heading-section--white">
+            State of the Art Infrastructure
+          </h1>
           <p>
             With reliability and speed in mind, worldwide data centers provide
             the backbone for ultra-fast connectivity. This ensures your site
