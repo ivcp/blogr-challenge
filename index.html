@@ -140,62 +140,78 @@
           </p>
         </div>
       </section>
-      <section class="section-3">
-        <div>image</div>
-        <div>
-          <h2 class="heading-secondary">Free, open, simple</h2>
-          <p>
-            Blogr is a free and open source application backed by a large
-            community of helpful developers. It supports features such as code
-            syntax highlighting, RSS feeds, social media integration,
-            third-party commenting tools, and works seamlessly with Google
-            Analytics. The architecture is clean and is relatively easy to
-            learn.
-          </p>
-          <h2 class="heading-secondary">Powerful tooling</h2>
-          <p>
-            Batteries included. We built a simple and straightforward CLI tool
-            that makes customization and deployment a breeze, but capable of
-            producing even the most complicated sites.
-          </p>
+      <section class="section-3 grid">
+        <picture class="section-3__image">
+          <source
+            media="(max-width: 56.1875em)"
+            srcset="./images/illustration-laptop-mobile.svg"
+          />
+          <source
+            media="(min-width: 56.25em)"
+            srcset="./images/illustration-laptop-desktop.svg"
+          />
+          <img
+            src="./images/illustration-laptop-mobile.svg"
+            alt="Editor illustration"
+          />
+        </picture>
+        <div class="section-3__text">
+          <div>
+            <h2 class="heading-secondary">Free, open, simple</h2>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div>
+            <h2 class="heading-secondary">Powerful tooling</h2>
+            <p>
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
         </div>
       </section>
     </main>
-
-    <footer>
-      <h2 class="logo">Blogr</h2>
+    <footer class="footer">
+      <div class="logo"></div>
       <div>
-        <h4>Product</h4>
+        <h4 class="heading-links--footer">Product</h4>
         <ul role="list">
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
         </ul>
       </div>
       <div>
-        <h4>Company</h4>
+        <h4 class="heading-links--footer">Company</h4>
         <ul role="list">
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
       <div>
-        <h4>Connect</h4>
+        <h4 class="heading-links--footer">Connect</h4>
         <ul role="list">
-          <li>Contact</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
         </ul>
       </div>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/ivcp">ivcp</a>.
       </div>
     </footer>
   </body>

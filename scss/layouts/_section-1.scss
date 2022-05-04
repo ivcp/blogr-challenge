@@ -19,7 +19,6 @@
 
     @include a.breakpoint(large) {
       grid-column: 3 / -1;
-      //transform: translate(30%, -10%);
       transform: scale(1.2) translate(20%);
     }
   }

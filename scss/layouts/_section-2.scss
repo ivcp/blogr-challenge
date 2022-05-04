@@ -12,6 +12,11 @@
   border-top-right-radius: a.rem(100);
   border-bottom-left-radius: a.rem(100);
 
+  @include a.breakpoint(small) {
+    background-size: 90%, 100%;
+    padding-block: a.rem(50);
+  }
+
   @include a.breakpoint(large) {
     height: a.rem(410);
     margin-top: 5%;

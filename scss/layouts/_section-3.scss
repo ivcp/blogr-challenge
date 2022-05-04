@@ -1,0 +1,51 @@
+@use '../abstracts/' as a;
+
+.section-3 {
+  padding-top: a.rem(80);
+  overflow: hidden;
+
+  @include a.breakpoint(large) {
+    margin-top: a.rem(100);
+    padding-bottom: 8vh;
+  }
+
+  &__image {
+    grid-column: 1 / -1;
+    transform: scale(1.2);
+    margin-inline: auto;
+
+    @include a.breakpoint(large) {
+      grid-column: 1 / span 2;
+      transform: scale(1.2) translate(-20%);
+    }
+  }
+
+  &__text {
+    grid-column: 2 / 3;
+    max-width: 35ch;
+    justify-self: center;
+
+    @include a.breakpoint(large) {
+      grid-column: 3 / 4;
+      max-width: 50ch;
+      align-self: center;
+      justify-self: left;
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      gap: a.rem(20);
+
+      &:not(:last-child) {
+        margin-bottom: a.rem(40);
+      }
+
+      // @include a.breakpoint(xlarge) {
+      //   &:not(:last-child) {
+      //     margin-bottom: a.rem(60);
+      //   }
+      // }
+    }
+  }
+}

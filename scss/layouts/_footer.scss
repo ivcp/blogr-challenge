@@ -1,7 +1,55 @@
+@use '../abstracts/' as a;
+@use '../base/' as b;
+
+.footer {
+  background-color: a.$very-dark-black-blue;
+  font-family: b.$font-links;
+  text-align: center;
+  padding-top: a.rem(60);
+  border-top-right-radius: a.rem(100);
+  margin-top: a.rem(80);
+  display: grid;
+  row-gap: a.rem(20);
+
+  @include a.breakpoint(large) {
+    row-gap: a.rem(40);
+    margin-top: a.rem(150);
+    grid-template-columns: repeat(4, 1fr);
+    text-align: left;
+  }
+
+  .logo {
+    margin-inline: auto;
+  }
+
+  & ul {
+    @include a.breakpoint(large) {
+      padding-bottom: a.rem(40);
+    }
+    & a {
+      color: a.$grayish-blue;
+      text-decoration: none;
+      font-weight: 400;
+      font-size: a.rem(18);
+
+      @include a.breakpoint(large) {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  & a {
+    color: a.$very-light-red;
+  }
+
+  @include a.breakpoint(large) {
+    grid-column: 1 / -1;
+  }
 }

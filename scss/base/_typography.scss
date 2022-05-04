@@ -21,6 +21,11 @@ h4 {
 
 .heading-links {
   font-size: a.rem(18);
+
+  &--footer {
+    font-size: a.rem(18);
+    color: a.$white;
+  }
 }
 
 .heading-section {
