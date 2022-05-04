@@ -14,7 +14,7 @@
   background-size: 360%, 100%;
 
   @include a.breakpoint(large) {
-    height: 74vh;
+    height: 70vh;
     background-image: url('../../images/bg-pattern-intro-desktop.svg'),
       a.$background-gradient-intro;
     background-position: 25% 51%, center;
